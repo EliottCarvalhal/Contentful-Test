@@ -1,25 +1,50 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
-function App() {
+import ContentfulContent from './ContentfulContent';
+import DummyTextSwe from './DummyTextSwe';
+import DummyTextEng from './DummyTextEng';
+
+const App = () => {
+  const [isRendered, setIsRendered] = useState(false);
+  const [isRenderedSwe, setIsRenderedSwe] = useState(false);
+  const [isRenderedEng, setIsRenderedEng] = useState(false);
+
+  const handleButtonClickEng = () => {
+    setIsRenderedEng(true);
+    setIsRenderedSwe(false);
+  };
+
+  const handleButtonClickSwe = () => {
+    setIsRenderedSwe(true);
+    setIsRenderedEng(false);
+  };
+
+  const handleButtonClick = () => {
+    setIsRendered(true);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+      <button onClick={handleButtonClick} className="render-contentful">
+        Click To Render Contentful Data
+      </button>
+      {isRendered && <ContentfulContent />}
+      <div className="flag-buttons">
+        <button onClick={handleButtonClickSwe} id="render-dummy">
+          <span>&#127480;&#127466;</span>
+        </button>
+        
+        <button onClick={handleButtonClickEng} id="render-dummy">
+          <span>&#127482;&#127480;</span>
+        </button>
+        {isRenderedSwe && <DummyTextSwe />}
+        {isRenderedEng && <DummyTextEng />}
+        
+      </div>
     </div>
   );
-}
+};
 
 export default App;
