@@ -18,11 +18,12 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
+    "extends": ["react-app", "react-app/jest"],
+    "env": {
+      "jest": true
+    }
+  }
+  ,
   "browserslist": {
     "production": [
       ">0.2%",
