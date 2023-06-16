@@ -3,3 +3,19 @@
     gap: 10px;
   }
 
+.header {
+    border-bottom: 2px inset;
+    font-family: serif;
+
+}
+.dropDownIcon{
+    width: 10px;
+    height: 10px;
+}
+.listing{
+    display: flex;
+    margin-right: 50px;
+}
+.dropdown{
+    margin-left:10px;
+}
