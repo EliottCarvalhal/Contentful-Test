@@ -33,17 +33,8 @@ const Header = () => {
           </span>
         </div>
 
-        <div className="flag-buttons" style={{display:'flex', marginLeft:'600px'}}>
-        <button id="render-dummy">
-          <span>&#127480;&#127466;</span>
-        </button>
 
-        <button id="render-dummy">
-          <span>&#127482;&#127480;</span>
-        </button>
         
-
-      </div>
       
       </div>
     
