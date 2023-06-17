@@ -7,7 +7,7 @@ const MainText = () => {
 
     <div className='main' style={{position: 'absolute', top: '35%', left: '50%', transform: 'translate(-50%, -50%)' }}>
     
-    <span style={{fontSize:'22px', marginLeft:'35%'}}>
+    <span class="notranslate" style={{fontSize:'22px', marginLeft:'35%'}}>
         FLOWSCAPE SOLUTIONS
     </span>
 
@@ -18,6 +18,7 @@ const MainText = () => {
     <div style={{paddingLeft:'100px',fontSize:'20px', maxWidth:'750px', wordBreak:'break-word', textAlign:'center'}}>
         Flowscape's comprehensive solutions offer everything your business needs to streamline and enhance your hybrid office.
     </div>
+
 
   </div>
     );

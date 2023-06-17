@@ -9,19 +9,19 @@ const Header = () => {
       <div style = {{display : 'flex', marginTop : '30px', marginLeft : '275px'}}>
 
         <div className='listing'>
-        <span>Solutions</span>
+        <span>Solutions &nbsp;</span>
         <Option className = 'dropdown'>
         </Option>
         </div>
 
         <div className='listing'>
-        <span>Products</span>
+        <span>Products &nbsp;</span>
         <Option className = 'dropdown'>
         </Option>
         </div>
 
         <div className='listing'>
-        <span>Price</span>
+        <span>Price &nbsp;</span>
         <Option className = 'dropdown'>
 
         </Option>
